@@ -346,6 +346,12 @@ const engines = {
       target: 'https://vcg.com/',
       isExec: true
     }
+  },
+  whostv: {
+    image: {
+      target: 'https://whos.tv/',
+      isExec: true
+    }
   }
 };
 
@@ -386,7 +392,13 @@ const sponsorLogoVariants = {
   lenso: ['dark']
 };
 
-const rasterEngineIcons = ['iqdb', 'tineye', 'whatanime', 'repostSleuth'];
+const rasterEngineIcons = [
+  'iqdb',
+  'tineye',
+  'whatanime',
+  'repostSleuth',
+  'whostv'
+];
 
 // https://github.com/jshttp/mime-db
 const imageMimeTypes = {
@@ -610,7 +622,8 @@ const webpEngineSupport = [
   'icons8',
   'lenso',
   'googleImages',
-  'unsplash'
+  'unsplash',
+  'whostv'
 ];
 
 // Search engines only support the image format in compatible browsers.
@@ -701,7 +714,8 @@ const maxImageUploadSize = {
   lenso: {ui: 10 * 1024 * 1024},
   googleImages: {api: 20 * 1024 * 1024},
   unsplash: {api: Infinity, ui: 20 * 1024 * 1024},
-  vcg: {ui: 50 * 1024 * 1024}
+  vcg: {ui: 50 * 1024 * 1024},
+  whostv: {api: Infinity}
 };
 
 const chromeDesktopUA =
